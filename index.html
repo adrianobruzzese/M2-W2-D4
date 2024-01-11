@@ -1,101 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>WineWay or Another - Enoteca a Domicilio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">WineWay</a>
+      <div class="navbar__menu">
+        <a href="#" class="navbar__menu--links">Home</a>
+        <a href="#" class="navbar__menu--links">Chi siamo</a>
+        <a href="#catalog" class="navbar__menu--links">La Cantina</a>
+        <a href="#catalog" class="navbar__menu--links" id="button">Ordina</a>
+      </div>
+    </nav>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
-</head>
+    <!-- Hero -->
+    <div class="hero animate">
+      <div class="hero__container">
+        <div class="hero__container--left">
+          <h1>Your Wine</h1>
+          <h2>Your Way</h2>
+          <p>WineWay or another, le tue bottiglie preferite a domicilio</p>
+          <button class="hero__container--btn blue">
+            <a href="#catalog">Ordina</a>
+          </button>
+          <button class="hero__container--btn orange">
+            <a href="#">Contatti</a>
+          </button>
+          <button class="hero__container--btn green">
+            <a href="#">Partners</a>
+          </button>
+        </div>
+        <div class="hero__container--right">
+          <img
+            src="assets/img/logo3.jpg"
+            alt="logo"
+            class="hero__container--img"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="photo-grid" id="catalog">
+      <h2 class="catalog">Our Catalog</h2>
+      <div class="photo-gallery">
+        <div class="column">
+          <div class="photo">
+            <img src="assets/img/vino (10).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (11).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (12).JPG" alt="" />
+          </div>
+        </div>
 
-<body>
+        <div class="column">
+          <div class="photo">
+            <img src="assets/img/vino (13).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (14).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (15).JPG" alt="" />
+          </div>
+        </div>
 
-   <header>
-      
-      <nav class="navbar navbar-expand-lg bg-body-white">
-         <div class="container d-flex">
-            <a class="navbar-brand" href="index.html"><img src="assets/logo.svg" alt=""></a>
+        <div class="column">
+          <div class="photo">
+            <img src="assets/img/vino (16).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (17).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (9).JPG" alt="" />
+          </div>
+          <div class="photo">
+            <img src="assets/img/vino (8).JPG" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-container">
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"> </i></a>
+        <a href="#"><i class="fa-brands fa-instagram"> </i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"> </i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"> </i></a>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Chi Siamo</a></li>
+          <li><a href="#">La Cantina</a></li>
+          <li><a href="#">Ordina</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2024; Designed with love by <span class="designer">Adriano Bruzzese</span>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                     <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Browse
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action 1</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 1</a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something here</a></li>
-                     </ul>
-                  </li>
+        </p>
 
-                  <li class="nav-item dropdown">
-                     <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Landings
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action 2</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 2</a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something here 2</a></li>
-                     </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                     <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Pages
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action 3</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 3</a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something here 3</a></li>
-                     </ul>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                     <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Account
-                     </a>
-                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action 4</a></li>
-                        <li><a class="dropdown-item" href="#">Another action 4</a></li>
-                        <li>
-                           <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something here 4</a></li>
-                     </ul>
-                  </li>
-               </ul>
-            </div>
-            <div class="d-flex">
-               <div class="d-flex align-items-center">
-                  <button class="btn border rounded-circle"><i class="text-secondary fa-regular fa-bell"></i></button>
-                  <button id="accesso-profilo" class="btn"><img class="rounded-circle" src="assets/avatar-1.jpg" alt="faccia"></button>
-               </div>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-            </div>
-         </div>
-      </nav>
-   </header>
-</body>
-
+      </div>
+    </footer>
+  </body>
 </html>

@@ -15,8 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       imageUrl: document.getElementById('image').value,
       description: document.getElementById('description').value,
     };
-
-    // Effettua la richiesta POST all'API
+    console.log(JSON.stringify(productData));
     fetch(apiUrl, {
       method: 'POST',
       headers: {
@@ -32,18 +31,19 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .catch((error) => {
         console.error('Error:', error);
+        document.getElementById('name').value = '';
+        document.getElementById('brand').value = '';
+        document.getElementById('price').value = '';
+        document.getElementById('image').value = '';
+        document.getElementById('description').value = '';
       });
-  });
-
-  resetButton.addEventListener('click', function () {
-    form.reset();
   });
 });
 
 function addProductCard(wine) {
-    const container = document.getElementById('productsContainer');
-    
-    const cardHTML = `
+  const container = document.getElementById('productsContainer');
+
+  const cardHTML = `
         <div class="card h-100">
             <img src="${wine.image}" class="card-img-top" alt="${wine.name}">
             <div class="card-body d-flex flex-column">
@@ -55,5 +55,7 @@ function addProductCard(wine) {
             </div>
         </div>
     `;
+    container.innerHTML += cardHTML;
+}
 
-    container.innerHTML += cardHTML;}
+

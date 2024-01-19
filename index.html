@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/logo2.jpg">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,18 +12,16 @@
     <title>WineWay or Another - Enoteca a Domicilio</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <header class="navbar__home">
       <a href="#" class="navbar__logo">WineWay</a>
       <div class="navbar__menu">
-        <a href="#" class="navbar__menu--links">Home</a>
-        <a href="#" class="navbar__menu--links">Chi siamo</a>
-        <a href="#catalog" class="navbar__menu--links">La Cantina</a>
-        <a href="#catalog" class="navbar__menu--links" id="button">Ordina</a>
+        <a href="#" class="navbar__menu__links">Home</a>
+        <a href="#catalog" class="navbar__menu__links">I nostri vini</a>
+        <a href="catalog.html" class="navbar__menu__links">Amministrazione</a>
+        <a href="products.html" class="navbar__menu__links" id="button">Ordina</a>
       </div>
-    </nav>
+    </header>
 
-    <!-- Hero -->
     <div class="hero animate">
       <div class="hero__container">
         <div class="hero__container--left">
@@ -30,10 +29,10 @@
           <h2>Your Way</h2>
           <p>WineWay or another, le tue bottiglie preferite a domicilio</p>
           <button class="hero__container--btn blue">
-            <a href="#catalog">Ordina</a>
+            <a href="products.html">Ordina</a>
           </button>
           <button class="hero__container--btn orange">
-            <a href="#">Contatti</a>
+            <a href="#footer">Contatti</a>
           </button>
           <button class="hero__container--btn green">
             <a href="#">Partners</a>
@@ -92,7 +91,7 @@
       </div>
     </div>
     <footer class="footer-container">
-      <div class="social">
+      <div class="social" id="footer">
         <a href="#"><i class="fa-brands fa-facebook"> </i></a>
         <a href="#"><i class="fa-brands fa-instagram"> </i></a>
         <a href="#"><i class="fa-brands fa-x-twitter"> </i></a>
@@ -101,16 +100,16 @@
       <div class="footer-nav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Chi Siamo</a></li>
-          <li><a href="#catalog">La Cantina</a></li>
-          <li><a href="#catalog">Ordina</a></li>
+          <li><a href="#">Lavora con noi</a></li>
+          <li><a href= "#">Press</a></li>
+          <li><a href="catalog.html">Amministrazione</a></li>
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>Copyright &copy; 2024; Designed with love by <span class="designer">Adriano Bruzzese</span>
-
+        <p>
+          Copyright &copy; 2024; Designed with love by
+          <span class="designer">Adriano Bruzzese</span>
         </p>
-
       </div>
     </footer>
   </body>
